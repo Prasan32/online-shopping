@@ -1,0 +1,103 @@
+body {
+    font-family: Lato;
+}
+
+.vl {
+    border-left: 1px solid gray;
+    height: 35px;
+}
+
+.nav2-items {
+    background-color: #095c91;
+    width: 25%;
+
+}
+
+.nav2-items:hover {
+    background-color: #134b6d;
+}
+
+.anc {
+    color: black;
+}
+
+.fa-icon {
+    color: black;
+}
+
+.fa-icon:hover {
+    color: #134b6d;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    background-color: rgb(243, 239, 239);
+}
+
+.title {
+    color: rgb(94, 90, 90);
+}
+
+.add-to-cart {
+    background-color: #fa4420;
+    color: white;
+    font-size: 14px;
+    border: solid #fa4420 1px;
+}
+
+.add-to-cart:hover {
+    background-color: #ca2504;
+    border: solid #ca2504 1px;
+}
+
+.footer-contents {
+    font-size: 15px;
+}
+
+
+/* login form css  */
+.auth-btn {
+    background-color: #095c91;
+    color: white;
+    text-decoration: none;
+    width: 18rem;
+    margin: 4px;
+}
+
+.auth-btn:hover {
+    background-color: #134b6d;
+    color: white;
+}
+
+/* login form css ends */
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

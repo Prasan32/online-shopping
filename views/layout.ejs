@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="container-fluid d-flex flex-row justify-content-between py-3" style="background-color: white;">
+            <div>
+                <img src="images/dalipalilogo.png" alt="dalipali">
+                <img src="images/dalipalitext.png" alt="dalipali text">
+            </div>
+            <div>
+                <input class="form-control rounded-pill text-center mr-4" type="search" placeholder="Search"
+                    style="width: 800px; height: 35px;">
+            </div>
+            <div class="m-1">
+                <a href="#" class="fa-icon"> <i class="far fa-envelope fa-lg mr-4"></i></a>
+                <a href="#" class="fa-icon"><i class="far fa-shopping-cart fa-lg mr-4"></i></a>
+            </div>
+            <div class="vl"></div>
+            <% if(user) { %>
+            <div class="mt-1 mr-4">
+                <a href="/logout" class="anc" style="text-decoration: none;">
+                    <i class="fas fa-user fa-lg"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+            <% } else { %>
+            <div class="mt-1 mr-4">
+                <a href="/login" class="anc" style="text-decoration: none;">
+                    <i class="fas fa-user fa-lg"></i>
+                    <span id="auth">Login/Register</span>
+                </a>
+            </div>
+            <% } %>
+        </div>
+        <div class="container-fluid" style="background-color: #095c91;height: 50px;">
+            <ul class="list group d-flex flex-row" style="height: 50px;">
+                <li class="list-group-item nav2-items">
+                    <a href="#" class="text-white" style="text-decoration: none;"><i class="far fa-store mr-1"></i>
+                        Dalipali</a>
+                </li>
+                <li class="list-group-item   nav2-items">
+                    <a href="/" class="text-white" style="text-decoration: none;"><i
+                            class="far fa-home-lg-alt mr-1 "></i> Home</a>
+                </li>
+                <li class="list-group-item   nav2-items">
+                    <a href="#" class=" text-white" style="text-decoration: none;"> <i
+                            class="far fa-shopping-basket mr-1 "></i>Shop</a>
+                </li>
+                <li class="list-group-item   nav2-items">
+                    <a href="#" class=" text-white" style="text-decoration: none;"><i
+                            class="far fa-info-circle mr-1"></i> About Us</a>
+                </li>
+                <li class="list-group-item   nav2-items">
+                    <a href="#" class=" text-white" style="text-decoration: none;"><i
+                            class="far fa-address-book mr-1"></i>Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- navbar ends here -->
+
+    <%- body %>
+
+    <!-- footer -->
+    <div class="container footer py-4 px-4">
+        <div class="d-flex flex-row justify-content-between" style="height: 50px;">
+            <h5><i class="fas fa-shuttle-van mr-1"></i>Free & Next Day Delivery</h5>
+            <h5><i class="fas fa-shopping-basket mr-1"></i>100% Satisfaction Guarante</h5>
+            <h5><i class="fas fa-tag mr-1"></i>Great Daily Deals Discount</h5>
+        </div>
+        <hr>
+        <div class="py-4 d-flex flex-row justify-content-between">
+            <div>
+                <div>
+                    <img src="images/dalipalilogo.png" alt="">
+                    <img src="images/dalipalitext.png" alt="">
+                </div>
+                <div class="ml-1 mt-3">
+                    <h6 class="footer-contents"><i class="fas fa-phone-alt mr-1"></i>+9879082347</h6>
+                    <h6 class="footer-contents"><i class="fas fa-envelope mr-1"></i>dalipali@gmail.com</h6>
+                    <h6 class="footer-contents"><i class="fal fa-globe mr-1"></i>dalipali.com</h6>
+                    <h6 class="footer-contents"><i class="fas fa-phone-alt mr-1"></i>+5345783957</h6>
+                </div>
+            </div>
+            <div>
+                <h5>TOP CITIES</h5>
+                <h6 class="footer-contents">Butwal</h6>
+                <h6 class="footer-contents">Kalikanagar</h6>
+                <h6 class="footer-contents">Drivertol</h6>
+                <h6 class="footer-contents">Manigram</h6>
+            </div>
+            <div>
+                <h5>CATEGORIES</h5>
+                <h6 class="footer-contents">Vegetable</h6>
+                <h6 class="footer-contents">Groceries & staples</h6>
+                <h6 class="footer-contents">Breakfast & dairy</h6>
+                <h6 class="footer-contents">Soft Drinks</h6>
+                <h6 class="footer-contents">Biscuits & Cookies</h6>
+            </div>
+            <div>
+                <h5>ABOUT US</h5>
+                <h6 class="footer-contents">Information</h6>
+                <h6 class="footer-contents">Careers</h6>
+                <h6 class="footer-contents">Store Location</h6>
+                <h6 class="footer-contents">Affiliate Program</h6>
+                <h6 class="footer-contents">Copyright</h6>
+            </div>
+            <div>
+                <div>
+                    <h5>DOWNLOAD APP</h5>
+                    <i class="fab fa-google-play fa-lg"></i>
+                </div>
+                <div class="mt-4">
+                    <h5>GET IN TOUCH</h5>
+                    <i class="fab fa-facebook fa-lg mr-3"></i>
+                    <i class="fab fa-facebook-messenger fa-lg mr-3"></i>
+                    <i class="fab fa-google-plus fa-lg mr-3"></i>
+                    <i class="fab fa-whatsapp fa-lg mr-3"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer ends here -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
+    <script src="/js/app.js"></script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
