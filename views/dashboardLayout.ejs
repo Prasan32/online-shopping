@@ -31,6 +31,7 @@
     <!-- Stylesheets -->
 
     <!-- Fonts and Codebase framework -->
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
     <link rel="stylesheet" id="css-main" href="/css/codebase.min.css">
     <link rel="stylesheet" href="/js/plugins/dropzonejs/dist/min/dropzone.min.css">
@@ -663,7 +664,7 @@
                             <!-- END Side Overlay -->
 
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/auth/logout">
+                            <a class="dropdown-item" href="/logout">
                                 <i class="si si-logout mr-5"></i> Sign Out
                             </a>
                         </div>
@@ -824,7 +825,7 @@
                     <nav class="breadcrumb bg-body-light mb-0">
                         <a class="breadcrumb-item" href="#">e-Commerce</a>
                         <span class="breadcrumb-item active">Dashboard</span>
-                        <span class="breadcrumb-item active">title</span> 
+                        <span class="breadcrumb-item active"><%= title %></span> 
                     </nav>
                 </div>
             </div>
@@ -869,6 +870,8 @@
             /js/core/js.cookie.min.js
         -->
     <script src="/js/codebase.core.min.js"></script>
+
+    <script src="/js/dashboard.js"></script>
 
 
     <script src="/js/codebase.app.min.js"></script>
