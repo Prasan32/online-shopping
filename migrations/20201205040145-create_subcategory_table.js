@@ -2,20 +2,20 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.createTable("Categories", {
+    return queryInterface.createTable("Subcategorys", {
+      subcategory_id: {
+        type: Sequelize.INTEGER(11),
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+      },
       category_id: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
-        primaryKey: true,
-        autoIncrement: true,
       },
-      category_name: {
+      subcategory_name: {
         type: Sequelize.STRING,
         allowNull: false,
-      },
-      position: {
-        type: Sequelize.INTEGER(11),
-        defaultValue: null,
       },
       status: {
         type: Sequelize.BOOLEAN,
@@ -28,6 +28,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.dropTable("Categories");
+    return queryInterface.dropTable("Subcategorys");
   }
 };
