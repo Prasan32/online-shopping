@@ -42,6 +42,7 @@ function authController() {
             })(req, res, next);
         },
         logout(req, res) {
+            req.session.destroy();
             req.logout();
             return res.redirect('/login')
         },
